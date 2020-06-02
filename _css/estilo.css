@@ -1,0 +1,271 @@
+	@charset "utf-8";
+	@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+	@font-face {
+		font-family: 'FontLogo';
+		src: url("../_fonts/bubblegum-sans-regular.otf");
+	}
+
+	body{
+		background-color: #dddddd;
+		color: rgba(0,0,0,1);
+		font-family:Arial, sans-serif;
+	}
+
+	p{
+		text-align: justify; 
+		text-indent: 50px;
+	}
+
+	a{
+		color:#888888;
+		text-decoration:none;
+		font-weight:bold;
+	}
+
+	a:hover {
+		color:#cecece;
+		font-weight:bolder;
+	}
+
+	/*Formatacao da div interface*/
+	div#interface {
+		background-color:#ffffff;
+		width:900px;
+		margin: -20px auto 0px auto;
+		/*as configuracoes de padding sao as mesmas de margin porem padding serve para espacamento interno dos conteiners enquanto margin serve para espacamento interno */
+		/*se todas as medidas de padding forem iguais pode-se informar apenas um parametro para todas */
+		padding: 10px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
+	}
+	/*Formatação de imagens com legenda*/ 
+	
+	figure.foto-legenda{
+		position: relative;
+		border: 8px solid white;
+		box-shadow: 1px 1px 4px black;
+	}
+	
+	figure.foto-legenda img{
+		width: 100%;
+		height: 100%;
+		
+	}
+	
+	figure.foto-legenda figcaption {
+		opacity: 0;
+		position: absolute;
+		top: 0px;
+		background-color: rgba(0,0,0,.4);
+		color: white;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		box-sizing: border-box;
+		transition: opacity 1s;
+	}
+	
+	figure.foto-legenda:hover figcaption {
+		opacity: 1;
+	}
+	
+	/*Formatacao do menu*/
+	nav#menu {
+		display:block;
+	}
+
+	nav#menu ul {
+		list-style:none;
+		text-transform: uppercase;
+		position:absolute;
+		top:-20px;
+		left:500px;
+	}
+
+	nav#menu li{
+		border : 1px solid #dddddd;
+		-webkit-border-radius:0px 0px 10px 10px;
+		display: inline-block;
+		background-color: #dddddd;
+		padding: 10px;
+	}
+
+	nav#menu li:hover{
+		background-color:#606060;
+		transition: background-color 1s;
+	}
+
+	nav#menu h1{
+		display:none;
+	}
+
+	nav#menu a{
+		text-decoration: none;
+		color: black;
+	}
+
+	nav#menu a:hover{
+		color: white;
+	}
+	
+	/*Formatacao da parte relacionada ao id criado com o nome de "corpo"*/
+
+	section#corpo {
+		display:block;
+		width: 500px;
+		float:left;
+		border-right: 1px #606060 solid;
+		margin:auto;
+		padding:10px;
+	}
+
+	section#corpo.ft{
+		border:none;
+		
+		
+	} 
+
+	article#noticia-principal h2{
+		font-size:12pt;
+		color:#606060;
+		background-color:#dddddd;
+		padding:5px 0px 5px 10px;
+		margin:10px 0px 10px 0px;
+		
+	}
+
+	header#cabecalho-artigo h1{
+		font-family:'FontLogo', sans-serif;
+		font-size: 20pt;
+		color: #606060;
+		margin-bottom:0px;
+	}
+
+		header#cabecalho-artigo h2{
+		font-size:13pt;
+		color:#cecece;
+		background-color:#ffffff;
+		margin-bottom:0px;
+	}
+
+		header#cabecalho-artigo h3{
+		font-size:10pt;
+	}
+	
+	header#cabecalho-artigo h3.tad{
+		font-size:10pt;
+		display:block;
+		float:right;
+		margin:-6px 0px 0px 0px;
+	}
+	
+	table#tabelaspec {
+		border: 1px solid #606060;
+		border-spacing:0px;
+		margin-left: auto;
+		margin-right:auto;
+	}
+	
+	table#tabelaspec td{
+		border:1px solid #606060;
+		padding:10px;
+		text-align:center;
+		vertical-align:middle;
+		font-weight:bold;
+	}
+	
+	table#tabelaspec caption{
+		color:#888888;
+		font-weight:bolder;
+		font-size:13pt;
+	}
+	
+	table#tabelaspec caption span {
+		display:block;
+		float:right;
+		font-size:8pt;
+		color:#000000;
+		margin-top:10px;
+	}
+	
+	table#tabelaspec td.ce {
+		color:#ffffff;
+		background-color: #606060;
+		vertical-align:top;
+		font-weight:bold;
+	}
+	
+	table#tabelaspec td.cd{
+		background-color:#cecece;
+		
+	}
+	
+	aside#lateral {
+		display:block;
+		width:350px;
+		float:right;
+		background-color:#dddddd;
+		padding:10px;
+		box-shadow: 2px 2px 2px rgba(0,0,0.4)
+		
+	}
+	
+	aside#lateral h1{
+		font-family:'FontLogo', sans-serif;
+		color:#606060;
+		margin:30px 0px 0px 0px;
+		font-size:20pt;
+	
+	}
+	
+	aside#lateral h2{
+		font-size:13pt;
+		color: #ffffff;
+		background: #606060;
+		padding: 6px 0px 6px 10px;
+	}
+	
+	footer#rodape {
+		clear:both;
+		border-top:1px #606060 solid;
+	}
+	
+	footer#rodape p {
+		text-align: center;
+;
+	}
+	
+	/* formatacao do oculos icone*/
+	
+	header#cabecalho img#icone {
+		position:absolute;
+		left:980px;
+		top:80px;
+		
+	}
+	
+	header#cabecalho{
+		border-bottom:1px #606060 solid;
+		height:150px;
+		background:url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+	}
+	
+	header#cabecalho h1 {
+		font-family: 'FontLogo', sans-serif;
+		font-size: 30pt;
+		color: #606060;
+		text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+		padding:0px;
+		margin-bottom:0px;
+	}
+	
+	header#cabecalho h2{
+		font-family: 'Titillium Web', sans-serif;
+		font-size:15pt;
+		color:#888888;
+		padding:0px;
+		margin-top:0px;
+	}
+	
+	video#filme.aside-filme{
+		width: 350px;
+	}
